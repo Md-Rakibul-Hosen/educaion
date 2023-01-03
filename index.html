@@ -1,443 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PortFlix - Personal Portfolio Website </title>
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a1f0a078f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
-    <header>
+<!-- Navbar  Section Start -->
+<header>
+    <a href="#" class="logo">Port <span> Flix</span>.</a>
 
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="assets/images/company/company-2.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Deals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Success</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
-                        </li>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-                    </ul>
-                    <button type="button" class="btn btn-outline-primary" disabled><strong>Register</strong></button>
-                </div>
-            </div>
-        </nav>
-        <!-- Nav bar end -->
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+</header>
+<!-- Navbar Section End -->
+<!-- Home Section Start -->
+<section class="home" id="home">
+    <div class="social">
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+    </div>
+    <div class="home-img">
+        <img src="main.png" alt="">
+    </div>
+    <div class="home-text">
+        <span>Hello, I'm</span>
+        <h1>John Doe</h1>
+        <h2>Frontend Developer</h2>
+        <p>Lorem ipsum dolor sit amet cons <br> adipisicing elit. Minima, consectetur <br> ullam?</p>
+        <a href="#contact" class="btn">Download CV</a>
+    </div>
+</section>
+<!-- Home Section End -->
+<!-- About Section Start -->
 
-        <!-- carosul start -->
-        <section class="container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <img src="assets/images/cover/cover-1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block ali text-center ">
-                            <h2 class="fs-1">Get Started Digital Learning</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its layout.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/cover/cover-2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block mb-10">
-                            <h2>Get Started Digital Learning</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its layout.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/cover/cover-3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block mb-10">
-                            <h2>Get Started Digital Learning</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its layout.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-    </header>
-    <main>
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+    </div>
 
-        <!-- Course section  -->
-        <section class="container mt-5 ">
-            <div class="d-flex flex-wrap justify-content-center text-center py-5">
-                <h3>Discover Our Popular Courses</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout.</p>
-            </div>
-            <div class="row g-3 ">
-                <div class="col-12 col-lg-6">
-                    <div class=" d-flex align-items-center border rounded flex-column flex-md-row ">
-                        <img class="img-fluid w-100 " src="assets/images/course/course-1.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-2.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-3.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-4.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-5.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-6.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-4.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-3.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-2.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center border rounded flex-column flex-md-row">
-                        <img class=" img-fluid w-100  " src="assets/images/course/course-1.png" alt="">
-                        <div class="py-2 px-3">
-                            <h3>Fundamental of UI/XI Design</h3>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                            <p class="text-primary"><strong>Price: 200$</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center my-5">
-                <button type="button" class=" text-center btn btn-primary btn-lg">See More Courses</button>
-            </div>
-        </section>
-
-        <!-- Working section -->
-        <section class="container mt-5">
-            <div class="working d-flex align-items-center flex-column flex-lg-row">
-                <img class=" img-fluid" src="assets/images/working.png" alt="">
-                <div class="p-5 d-grid gap-4">
-                    <div>
-                        <h2>Explore The elearning Institute</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered
-                            alteration in some form,
-                            by injected humour, or randomised words which don't look even slightly believable. If you
-                            are
-                            going to use a passage of
-                            Lorem Ipsum, you need to be sure.</p>
-                        <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-                            Internet tend to repeat
-                            predefined.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <h3 class="fw-bold">3.2K+</h3>
-                            <p>Online Course</p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <h3 class="fw-bold">600+</h3>
-                            <p>Expwer member</p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <h3 class="fw-bold">1K+</h3>
-                            <p>Rating & Review</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <button type="button" class=" text-center btn btn-primary btn-lg">See More</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ready to join? -->
-        <section class="container mt-5">
-            <div
-                class="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center rounded bg-primary text-light p-5">
-                <div>
-                    <div class="text-center text-lg-start">
-                        <h2>
-                            Ready to join?
-                        </h2>
-                        <p class="flex-wrap">It is a long established fact that a reader will be distracted by the
-                            readable
-                            content of a page
-                            when looking at its
-                            layout.</p>
-                    </div>
-                </div>
-                <div class="">
-                    <button type=" button" class=" text-center btn btn-light btn-lg">Register Now</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Meet Our successfull student -->
-        <section class="container mt-5">
-            <div class="text-center text-lg-start">
-                <h2>Meet Our Successfull <br> Studen</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its
-                    layout.</p>
-            </div>
-
-            <div class="row
-            gx-3">
-                <div class="col-12  col-md-6 col-lg-3">
-                    <div class="border rounded mb-3">
-                        <img class=" img-fluid w-100" src="assets/images/student/student-1.png" alt="">
-                        <div class="p-3 text-center">
-                            <h5>Awlad Hossain</h5>
-                            <p>Web Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  col-md-6 col-lg-3">
-                    <div class="border rounded mb-3">
-                        <img class=" img-fluid w-100" src="assets/images/student/student-1.png" alt="">
-                        <div class="p-3 text-center">
-                            <h5>Awlad Hossain</h5>
-                            <p> Web Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  col-md-6 col-lg-3">
-                    <div class="border rounded mb-3">
-                        <img class=" img-fluid w-100" src="assets/images/student/student-1.png" alt="">
-                        <div class="p-3 text-center">
-                            <h5>Awlad Hossain</h5>
-                            <p>Web Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  col-md-6 col-lg-3">
-                    <div class="border rounded mb-3">
-                        <img class=" img-fluid w-100" src="assets/images/student/student-1.png" alt="">
-                        <div class="p-3 text-center">
-                            <h5>Awlad Hossain</h5>
-                            <p> Web Developer</p>
-                        </div>
-                    </div>
+    <div class="about-container">
+        <div class="about-img">
+            <img src="main.png" alt="">
+        </div>
+        <div class="about-text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis beatae eius quae ab consequatur est
+                perferendis dicta. Ad repellendus perferendis minus sunt error eos dicta enim accusantium ipsum
+                veniam debitis quasi sint cum fugiat porro quam, blanditiis a ratione quod!</p>
+            <div class="information">
+                <div class="info-box">
+                    <i class='bx bxs-user'></i>
+                    <span>Name</span>
                 </div>
 
-            </div>
-            <div class="p-5 text-center">
-                <button type=" button" class=" text-center btn btn-primary ">View All</button>
-            </div>
-            </div>
-        </section>
+                <div class="info-box">
+                    <i class='bx bxs-phone'></i>
+                    <span>+1 444 444 4444</span>
+                </div>
 
-        <!-- Frequently Asked Questions -->
-        <section class="container mt-5 ">
-            <div class="text-center">
-                <h1>Frequently Asked Questions</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its
-                    layout.</p>
-            </div>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What other services are you compatible with?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">There are many variations of passages of available, but the majority
-                            have suffered alteration in some form, by injected
-                            humour, or randomised words which don't look even slightly believable. If you are going to
-                            use a passage of Lorem Ipsum,
-                            you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-                            generators on the.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            I have a technical i need resolved, who do i email?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            I have a technical i need resolved, who do i email?
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            What other services are you compatible with?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            What other services are you compatible with?
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            What other services are you compatible with?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            What other services are you compatible with?
-                        </div>
-                    </div>
+                <div class="info-box">
+                    <i class='bx bxs-envelope'></i>
+                    <span>abc@gmail.com</span>
                 </div>
             </div>
-        </section>
+            <a href="#" class="btn">Download Cv</a>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
 
-        <!-- Sponser -->
-        <section class="container mt-5 d-none d-md-block">
-            <div class="row g-4 p-5">
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-1.png" alt=""></div>
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-2.png" alt=""></div>
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-3.png" alt=""></div>
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-4.png" alt=""></div>
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-5.png" alt=""></div>
-                <div class="col col-2 "><img class=" w-75" src="assets/images/company/company-6.png" alt=""></div>
-            </div>
-        </section>
-    </main>
+<!-- Skills Section Start -->
 
-    <!-- Footer -->
-    <footer class="bg-black mt-5">
-        <div class="  text-white text-center p-5">
-            <h1>Pro Edu</h1>
-            <p>Office 41, Zawaya Buildin, Ghala Muscat,
-                <br> Sultanate of Oman
-            </p>
-            <p>Privacy Ploicy | Terms of use</p>
-            <!-- social -->
-            <div class="d-flex justify-content-center fs-2 text-white">
-                <div class=" pe-2"> <a href=""> <i class="fa-brands fa-square-google-plus"></i></a></div>
-                <div class=" pe-2"> <a href=""> <i class="fa-brands fa-square-twitter"></i></a></div>
-                <div class=" pe-2"> <a href=""> <i class="fa-brands fa-linkedin"></i></a></div>
-                <div class=" pe-2"> <a href=""> <i class="fa-brands fa-square-instagram"></i></a></div>
+<section class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+    </div>
+
+    <div class="skills-container">
+        <div class="bars">
+
+            <div class="bars-box">
+                <h3>HTML</h3>
+                <span>94%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar html-bar"></div>
+            </div>
+
+            <div class="bars-box">
+                <h3>CSS</h3>
+                <span>84%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar css-bar"></div>
+            </div>
+
+            <div class="bars-box">
+                <h3>JavaScript</h3>
+                <span>74%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar js-bar"></div>
+            </div>
+
+            <div class="bars-box">
+                <h3>React</h3>
+                <span>80%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar react-bar"></div>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+        <div class="skills-img">
+            <img src="main.png" alt="Skill">
+        </div>
+    </div>
+</section>
+<!-- Skills Section End -->
+<!-- Services Section Start -->
+<section class="services" id="services">
+    <div class="heading">
+        <h2>Services</h2>
+        <span>Our Services</span>
+    </div>
+    <div class="services-content">
+
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-server'></i>
+            <h3>Backend Development</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-brush'></i>
+            <h3>UI/UX Design</h3>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxl-android'></i>
+            <h3>App Development</h3>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <input type="text" placeholder="Your Name">
+            <input type="email" name="" id="" placeholder="Your Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+            <input type="button" value="Send" class="contact-button">
+        </form>
+    </div>
+</section>
+<!-- Contact Section End -->
+<div class="footer">
+    <h2>Follow Us</h2>
+    <div class="footer-social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+    </div>
+
+</div>
+
+<div class="copyright">
+    &#169; PortFlix| All Right Reserved.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="assets/styles/script.js"></script>
 </body>
 
 </html>
